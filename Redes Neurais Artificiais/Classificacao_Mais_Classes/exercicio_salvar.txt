@@ -1,0 +1,23 @@
+Olá!
+
+Após executarmos o processo de tuning da rede neural e coletarmos quais são os melhores 
+parâmetros, é hora de gerar o classificador final para que possamos usar em 
+ambientes comerciais! Você já aprendeu como realizar essa tarefa na base de dados 
+Breast Cancer, e você pode seguir os seguintes passos para concluir essa atividade:
+
+Treinar a rede neural utilizando a base de dados completa utilizando os melhores 
+parâmetros que foram obtidos pelo tuning
+Salvar a estrutura da rede neural no formato json  juntamente com os pesos no formato h5 
+Carregar a rede neural salva no tópico anterior
+Criar um novo registro (pode ser com dados aleatórios) no mesmo formato dos atributos 
+previsores
+Classificar o novo registro, indicando a que classe ele pertence
+Essa tarefa pode ser considerado o processo final de um sistema inteligente, 
+que você efetivamente utiliza a rede neural para classificar novos registros!
+
+Até e bons estudos :)
+
+Jones
+
+Perguntas dessa tarefa
+Como ficará a estrutura do código fonte para salvar e classificar somente um registro?

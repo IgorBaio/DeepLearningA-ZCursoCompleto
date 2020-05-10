@@ -1,0 +1,37 @@
+Olá!
+
+Na seção anterior você aprendeu como utilizar recursos para fazer o ajuste (tuning) dos parâmetros utilizando validação cruzada e a técnica de busca em grade (grid search). Baseado no que você aprendeu anteriormente, o objetivo agora é você descobrir quais são os melhores parâmetros para a base de dados Iris. Como essa base de dados possui somente 150 registros, o esforço computacional não será tão grande assim para chegarmos nos melhores valores
+
+Você pode adicionar os seguintes elementos:
+
+Testar outros otimizadores, funções de ativação, inicializadores de pesos e número de 
+neurônios nas camadas ocultas
+Adicionar camadas de dropout  e passar como parâmetro os valores 0.2 e 0.3 
+para que o algoritmo descubra qual desses valores leva a melhor desempenho da rede neural
+Aumentar os valores do batch_size  e do número de épocas (epochs )
+Para esta tarefa você pode utilizar como base o arquivo breast_cancer_tuning.py para
+ analisar a codificação que nós desenvolvemos na seção anterior. E apesar de ser bastante 
+ similar, como agora estamos trabalhando com um problema com três neurônios na camada de 
+ saída, você precisará fazer algumas pesquisas adicionais para que o código funcione!
+  Abaixo algumas dicas úteis:
+
+
+Não será necessário criar as variáveis dummy  para a classe, porém,
+ a camada de saída continuará com três neurônios e com a função de ativação softmax 
+Com relação a função de custo (loss ), você precisará utilizar a sparse_categorical_crossentropy  (esse parâmetro deverá ser fixo e você não conseguirá testar outras funções)
+A métrica para avaliar o algoritmo deverá ser somente accuracy  ao invés de categorical_accuracy 
+O parâmetro scoring  não deve ser passado na criação do GridSearchCV 
+Essas configurações acima não necessárias devido a particularidades do scikit-learn 
+
+Assim que você conseguir rodar o arquivo e obter os melhores parâmetros, você deve enviar o código completo em python com a configuração utilizada! :)
+
+Importante: não existe uma solução única para esta tarefa, pois cada aluno pode inserir parâmetros diferentes para a realização dos testes!
+
+Bons estudos!
+
+Jones
+
+Perguntas dessa tarefa
+Quais foram os melhores parâmetros retornados para a base de dados Iris?
+
+Fazer download dos arquivos de recursos
