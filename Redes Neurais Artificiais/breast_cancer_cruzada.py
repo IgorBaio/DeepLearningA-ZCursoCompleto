@@ -19,8 +19,8 @@ def CriarRede():
                             kernel_initializer = 'random_uniform', 
                             input_dim = 30 ))
     
-    classificador.add(Dropout(0.2))
-    classificador.add(Dense(units = 16, activation = 'relu',
+    classificador.add(Dropout(0.25))
+    classificador.add(Dense(units = 8, activation = 'relu',
                             kernel_initializer = 'random_uniform'))
     classificador.add(Dropout(0.2))
 
@@ -34,7 +34,7 @@ def CriarRede():
 
     return classificador
 
-classificador = KerasClassifier(build_fn=CriarRede,epochs = 100,batch_size = 10)
+classificador = KerasClassifier(build_fn=CriarRede,epochs = 520,batch_size = 10)
 
 resultados = cross_val_score(estimator = classificador,X=previsores,y= classe,cv = 10,scoring= 'accuracy')
 
