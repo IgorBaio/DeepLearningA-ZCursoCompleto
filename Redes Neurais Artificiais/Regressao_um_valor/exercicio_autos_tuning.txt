@@ -1,0 +1,16 @@
+Olá!
+
+Na seção anterior você aprendeu como utilizar recursos para fazer o ajuste (tuning) dos parâmetros utilizando validação cruzada e a técnica de busca em grade (grid search). Porém, como esta base de dados dos veículos possui muitos registros, pode ser computacionalmente inviável testar as várias combinações de parâmetros em uma máquina desktop ou notebook pessoal. Por isso, a ideia desta tarefa é testar e comparar somente as funções de erro (cost/loss function ) que podem ser utilizadas nas tarefas de regressão, deixando todos os outros parâmetros com as configurações que fizemos os testes nas aulas anteriores.
+
+Você pode testar as seguintes funções: mean_squared_error , mean_absolute_error , mean_absolute_percentage_error , mean_squared_logarithmic_error  e squared_hinge .
+
+Na seção teórica sobre as redes neurais, nós aprendemos que a função mean_absolute_error  é a mais simples e que outras funções podem ter melhor desempenho. O objetivo de executar esses testes é comprovar (ou não) se essa afirmação se encaixa nesta base de dados dos veículos, indicando qual foi a melhor loss function.
+
+Importante: Você deve configurar somente o parâmetro loss  no método compile  da rede neural. Não é necessário alterar o parâmetro metrics  pois ele é usado somente para mostrar o resultado e de fato ele não é utilizado no treinamento da rede neural.
+
+Bom trabalho! :)
+
+Jones
+
+Perguntas dessa tarefa
+Qual é a melhor função de cálculo do erro para esta base de dados dos veículos?
