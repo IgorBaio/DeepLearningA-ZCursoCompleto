@@ -4,7 +4,14 @@ from keras.models import Sequential
 from keras.layers import Dense, Dropout
 from keras.wrappers.scikit_learn import KerasClassifier
 from sklearn.model_selection import GridSearchCV
+from sklearn.preprocessing import LabelEncoder
 
+base = pd.read_csv('/home/igorbaio/Documentos/DeepLearningA-Z/Base_de_Dados/iris.csv')
+previsores = base.iloc[:, 0:4].values
+classe = base.iloc[:, 4].values
+
+labelEnconder = LabelEncoder()
+classe = labelEnconder.fit_transform(classe)
 
 
 def CriarRede(optimizer,activation ,neurons1,neurons2 ):
